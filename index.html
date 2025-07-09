@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Interactive Boxes</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="container">
+    <h1 class="heading">
+      <span></span>
+      YAY! It's BOGO
+      <span></span>
+    </h1>
+
+    <!-- Box 1 -->
+    <section class="box" data-box>
+      <div class="box-header">
+        <label class="custom-radio">
+          <input type="radio" name="unit" />
+          <span class="checkmark"></span>
+        </label>
+        <div class="header-left">
+          <div class="unit-wrapper">
+            <span class="unit">1 Unit</span>
+            <span class="discount">10% Off</span>
+          </div>
+          <div class="subtext">Standard Price</div>
+        </div>
+        <div class="header-right">
+          <span class="price">$10.00 USD</span>
+          <span class="original-price">$24.00 USD</span>
+        </div>
+      </div>
+      <div class="box-content">
+        <div class="selectors-grid">
+          <div class="selectors-header">
+            <div></div>
+            <div>Size</div>
+            <div>Colour</div>
+          </div>
+          <div class="selectors-row">
+            <div>#1</div>
+            <select><option>S</option><option>M</option><option>L</option></select>
+            <select><option>Black</option><option>White</option><option>Blue</option></select>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Box 2 -->
+    <section class="box" data-box>
+      <div class="most-popular">MOST POPULAR</div>
+      <div class="box-header">
+        <label class="custom-radio">
+          <input type="radio" name="unit" />
+          <span class="checkmark"></span>
+        </label>
+        <div class="header-left">
+          <div class="unit-wrapper">
+            <span class="unit">2 Unit</span>
+            <span class="discount">20% Off</span>
+          </div>
+        </div>
+        <div class="header-right">
+          <span class="price">$18.00 USD</span>
+          <span class="original-price">$24.00 USD</span>
+        </div>
+      </div>
+      <div class="box-content">
+        <div class="selectors-grid">
+          <div class="selectors-header">
+            <div></div>
+            <div>Size</div>
+            <div>Colour</div>
+          </div>
+          <div class="selectors-row">
+            <div>#1</div>
+            <select><option>S</option><option>M</option><option>L</option></select>
+            <select><option>Black</option><option>White</option><option>Blue</option></select>
+          </div>
+          <div class="selectors-row">
+            <div>#2</div>
+            <select><option>S</option><option>M</option><option>L</option></select>
+            <select><option>Black</option><option>White</option><option>Blue</option></select>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Box 3 -->
+    <section class="box" data-box>
+      <div class="box-header">
+        <label class="custom-radio">
+          <input type="radio" name="unit" />
+          <span class="checkmark"></span>
+        </label>
+        <div class="header-left">
+          <div class="unit-wrapper">
+            <span class="unit">3 Unit</span>
+            <span class="discount">30% Off</span>
+          </div>
+        </div>
+        <div class="header-right">
+          <span class="price">$24.00 USD</span>
+          <span class="original-price">$24.00 USD</span>
+        </div>
+      </div>
+      <div class="box-content">
+        <div class="selectors-grid">
+          <div class="selectors-header">
+            <div></div>
+            <div>Size</div>
+            <div>Colour</div>
+          </div>
+          <div class="selectors-row">
+            <div>#1</div>
+            <select><option>S</option><option>M</option><option>L</option></select>
+            <select><option>Black</option><option>White</option><option>Blue</option></select>
+          </div>
+          <div class="selectors-row">
+            <div>#2</div>
+            <select><option>S</option><option>M</option><option>L</option></select>
+            <select><option>Black</option><option>White</option><option>Blue</option></select>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="summary">
+      <div class="free-delivery">Free Delivery</div>
+      <div class="total">Total: <span id="total-price">$18.00 USD</span></div>
+    </div>
+
+    <button class="add-to-cart">+ Add to Cart</button>
+    <div class="powered-by">@ Powered by Pumper</div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
